@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/*======== Preloader ============*/
+.preload {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.preload .preload-info i {
+  font-size: 45px;
+  margin-right: 4px;
+}
+.preload .preload-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.preload h4 {
+  margin: 8px;
+}
+
+/*======== Preloader ============*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #3498DB !important;
+  height: 100%;
+}
+body .contenedor {
+  height: 210px;
+  max-width: 370px;
+  background: #F4F6F7;
+  border-radius: 16px;
+  position: absolute;
+  box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.1);
+}
+body .contenedor .header {
+  text-align: center;
+}
+body .contenedor .header i {
+  margin-right: 10px;
+}
+body .contenedor .header h1 {
+  font-size: 21px;
+  font-weight: 500px;
+  padding: 16px;
+  border-bottom: 1px solid #A6ACAF;
+}
+body .contenedor .form {
+  margin: 40px 16px;
+  text-align: center;
+  padding: 0 16px;
+}
+body .contenedor .form i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 33%;
+  font-size: 21px;
+}
+body .contenedor .form input {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #ABB2B9;
+  padding: 0 17px;
+  height: 45px;
+  border-radius: 8px;
+}
+body .contenedor .form input:focus ~ label {
+  top: 65px;
+  color: #000;
+  font-size: 15px;
+}
+body .contenedor .form label {
+  position: absolute;
+  top: 6.7rem;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  color: #ABB2B9;
+  pointer-events: none;
+  transition: 0.5s;
+}
+body .contenedor .form button {
+  width: 100%;
+  background: #3498DB;
+  border: 1px solid #3498DB;
+  color: #fff;
+  margin: 0;
+  margin-top: 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.1s;
+}
+body .contenedor .form button:hover {
+  transform: scale(1.03);
+}
+body .contenedor .form button i {
+  margin-left: 8px;
+  font-size: 16px;
+}
+body .contenedor .codigo-qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 16px;
+}
+body .contenedor .codigo-qr img {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+}
+body .contenedor .codigo-qr #btn-download {
+  width: 40%;
+  background: #ABB2B9;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.1s;
+  opacity: 0;
+  pointer-events: none;
+}
+body .contenedor .codigo-qr #btn-download:hover {
+  transform: scale(1.03);
+  background: #3498DB;
+}
+body .contenedor .codigo-qr #btn-download i {
+  margin-left: 8px;
+  font-size: 16px;
+}
+body .contenedor.active {
+  height: fit-content;
+}
+body .contenedor.active .codigo-qr img {
+  opacity: 1;
+}
+body .contenedor.active #btn-download {
+  opacity: 1;
+  pointer-events: auto;
+}
+body footer {
+  position: fixed;
+  bottom: 0;
+}
+body footer i {
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+body footer i:hover {
+  color: #000;
+}
+body footer .copyright {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
